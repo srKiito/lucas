@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 32, 58);
+    color: whitesmoke;
+    font-family: 'Jost', sans-serif;
+}
+
+header{
+    display: flex;
+    width:  auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridC{
+    display: grid;
+    gap: 5em;
+    justify-content: center;
+}
+
+.contato a{
+    display: block;
+    padding: 0.2em;
+    font-size: 7em;
+}
+
+@media(min-width:1000px){
+    h2,h1,ul{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width: 1500px){
+    h2,h1,ul{
+        font-size: 2em;
+    }
+}
+
+@media(min-width:2000px){
+    h2,h1,ul{
+        font-size: 3em;
+    }
+}
+
+.titles h1{
+    font-family: 'Meddon', cursive;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.menu a{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(0, 32, 58);
+    transition: color 0.5s;
+}
+
+.menu a:active,.menu a:hover{
+    color: whitesmoke;
+}
+
+.menu ul{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 10px;
+    background-color: whitesmoke;
+    transition: background-color 0.5px;
+}
+.menu li:active,.menu li:hover{
+    background-color: rgb(0, 32, 58);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+
+}
+
+.site-title, .site-subtitle{
+    text-align: center;
+}
+
+.imgProjetos{
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: transform 0.5s, border-radius 0.5s;
+}
+
+.imgProjetos:hover{
+    border-radius: 15%;
+    transform: scale(1.2);
+}
+
+.grid{
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+@media(min-width:360px){
+    .imgProjetos{
+        width: 300px;
+    }
+    .contato a{
+        font-size: 14em;
+    }
+}
+
+@media(min-width:700px){
+    .imgProjetos{
+        width: 600px;
+    }
+    .contato a{
+        font-size: 26em;
+    }
+}
+
+@media(min-width:1400px){
+    .grid{
+        grid-template-columns: 640px 640px;
+    }
+    .contato a{
+        font-size: 26em;
+    }
+}
+
+@media(min-width: 1800px){
+    .imgProjetos{
+        width: 800px;
+    }
+    .grid{
+        grid-template-columns: 840px 840px;
+    }
+    .contato a{
+        font-size: 34em;
+    }
+    .gridC{
+        grid-template-columns: 550px 550px;
+    }
+}
+
+.contato a{
+    color:whitesmoke
+}
+
+.contato a:hover{
+    text-shadow: 0px 0px 25px gold;
+}
+
+figure{
+    text-align: center;
+}
+
+.grid{
+    justify-content: center;
+}
